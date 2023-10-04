@@ -1,27 +1,67 @@
-# Mp20231004TodoCdl
+# Speedcoding Micro Projects
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+Project id: mini-prj-20231004-todo-cdl
+Chapter id: none
+Chapter name: initial
 
-## Development server
+## About Micro Projects
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Welcome to Speedcoding Micro Projects
+Micro projects are between 5 to 10 hours depending on your skill.
+They focus on 2 or more Angular skills
 
-## Code scaffolding
+## Skill goals :
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- 
 
-## Build
+## App display:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- The app displays 2 sections one within the other:
+  (1) The parent section is a div for the app.component.
+  (2) The child section is a div for the photo component.
+      - Inside is a placeholder for an image and underneath a button 
 
-## Running unit tests
+  ## Screenshot of initial page before user interaction :
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/72dce3f5-902a-4095-8c18-69cae7dab5fa)
 
-## Running end-to-end tests
+## Interaction with app:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Click the button and watch th image change.
+- FYI: When they dont change its either because the same image is shown (they are picked randomly so they may reappear immediatly).
 
-## Further help
+## Screenshot after clicking the button :
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- ![image](https://github.com/SpeedCodeNpo/ng-exercises/assets/132397719/58642e75-2829-4c15-8e03-e7c322338efb)
+
+
+## Your task :
+
+- (1) Create a 'photo' folder which will hold :
+      - The PhotoModule, PhotoService and PhotoComponent
+- (2) Inside the photo folder create a 'models' folder to hold :
+      - The PhotoUnit interface that describes a single photo object
+      - The PhotoData class which will hold 4 PhotoUnit objects that are described at the bottom of this README file.
+- (3) Wireup the PhotoMOdule and service
+- (4) Verify that the app works
+
+## Included in the starter branch :
+
+- The styles are predefined in the styles.scss file.
+
+## Data for the PhotoData class :
+
+- The data below is an array with 4 photo objects, use this in the code as the source of data :
+
+
+### Refrences :
+
+(1) Project starter:
+
+- GitHub link: https://github.com/SpeedCodeNpo/mini-prj-20231004-todo-cdl
+- Stackblitz link:
+
+(2) Project solution:
+
+- GitHub link: 
+- Stackblitz link:
