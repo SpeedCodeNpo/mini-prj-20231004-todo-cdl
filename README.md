@@ -1,9 +1,10 @@
 # Speedcoding Micro Projects
 
 Project id: mini-prj-20231004-todo-cdl
-Chapter id: 00
-Chapter name: Base initial state
-
+Chapter id: 01
+Chapter name: Wireup 3rd Party
+About:
+   In this branch we focus on installing json-server and wireup of bootstrap lite for CSS only
 ## About Micro Projects
 
 Welcome to Speedcoding Micro Projects
