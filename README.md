@@ -1,8 +1,8 @@
 # Speedcoding Micro Projects
 
 Project id: mini-prj-20231004-todo-cdl
-Chapter id: none
-Chapter name: initial
+Chapter id: 00
+Chapter name: Base initial state
 
 ## About Micro Projects
 
