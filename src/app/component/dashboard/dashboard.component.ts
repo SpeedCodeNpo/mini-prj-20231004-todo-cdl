@@ -56,5 +56,26 @@ export class DashboardComponent implements OnInit{
     });
   }
 
+
+  deleteTaskComp(focusTask: Task){
+    this.crudSvc.deleteTask(focusTask).subscribe({
+      next: (value) => {
+        console.log(`Observer deleteTaskComp: Id of Value of focusTask.id is "${focusTask.id}"`)
+        this.ngOnInit();
+      },
+      
+      complete: () => console.log(`Observer deleteTaskComp: Triggered a COMPLETE.`),
+      
+      error: (myError: Error) => {
+        
+        console.log(`Observer deleteTaskComp: Id of Value of focusTask.id is "${focusTask.id}"`)
+        console.log(
+          `Observer deleteTaskComp: Triggered an error, the message is : "${myError}"`
+          )},
+        });
+      }
+      
+  //deleteTasComp 22:55
+
 }//end
 

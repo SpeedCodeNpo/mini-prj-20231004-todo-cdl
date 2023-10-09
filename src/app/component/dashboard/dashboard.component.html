@@ -27,7 +27,7 @@
                             <div class="input-group row ps-3">
                                 <div class="card col-md-10 border-0"> {{task.task_name}} </div>
                                 <button class="btn btn-outline-primary col me-2">e</button>
-                                <div class="btn btn-outline-danger col">X</div>
+                                <button class="btn btn-outline-danger col" (click)="deleteTaskComp(task)">X</button>
                                 <!-- <button class="btn btn-outline-danger col">X</button> -->
                             </div>
                         </div>
