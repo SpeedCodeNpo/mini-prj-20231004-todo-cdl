@@ -11,13 +11,16 @@ export class DashboardComponent implements OnInit{
 
   taskObj : Task = new Task();
   taskArr : Task[] = [];
-
   addTaskValue : string = '';
+  editTaskValue : string = '';
 
   crudSvc = inject(CrudService);
 
   ngOnInit(): void {
     this.taskObj = new Task(); //resets the value of taskObj
+    this.taskArr = [];
+    this.addTaskValue = '';
+    this.editTaskValue = '';
     this.getAllTaskComp(); //it loads a refreshed value for taskArr
   }
 
@@ -59,7 +62,7 @@ export class DashboardComponent implements OnInit{
 
   deleteTaskComp(focusTask: Task){
     this.crudSvc.deleteTask(focusTask).subscribe({
-      next: (value) => {
+      next: () => {
         console.log(`Observer deleteTaskComp: Id of Value of focusTask.id is "${focusTask.id}"`)
         this.ngOnInit();
       },
@@ -75,7 +78,28 @@ export class DashboardComponent implements OnInit{
         });
       }
       
-  //deleteTasComp 22:55
+      editTaskComp(){
+        this.taskObj.task_name = this.editTaskValue;
+        this.crudSvc.editTask(this.taskObj).subscribe({
+          next: () => {
+            console.log(`Observer editTaskComp: Id of Value of this.taskObj.id is "${this.taskObj.id}"`)
+            this.ngOnInit();
+          },
+          
+          complete: () => console.log(`Observer editTaskComp: Triggered a COMPLETE.`),
+          
+          error: (myError: Error) => {
+            
+            console.log(`Observer editTaskComp: Id of Value of this.taskObj.id is "${this.taskObj.id}"`)
+            console.log(
+              `Observer editTaskComp: Triggered an error, the message is : "${myError}"`
+              )},
+            });
+          }
 
+          call(editTask: Task){
+            this.taskObj = editTask;
+            this.editTaskValue = editTask.task_name;
+          }
 }//end
 
