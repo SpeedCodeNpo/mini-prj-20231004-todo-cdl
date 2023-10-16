@@ -3,6 +3,9 @@
 Project id: mini-prj-20231004-todo-cdl
 Chapter id: 00
 Chapter name: Base initial state
+Source: YTB: Code Logic :  https://www.youtube.com/watch?v=pLKVa1l7KMs
+3rd Party : 
+    (1) Uses json-server package as local db
 
 ## About Micro Projects
 
@@ -10,19 +13,6 @@ Welcome to Speedcoding Micro Projects
 Micro projects are between 5 to 10 hours depending on your skill.
 They focus on 2 or more Angular skills
 
-
-# Speedcoding Micro Projects
-
-Project id: mini-prj-20231004-todo-cdl
-Chapter id: 02
-Chapter name: Setting up classes
-About:
-   In this branch we 
-## About Micro Projects
-
-Welcome to Speedcoding Micro Projects
-Micro projects are between 5 to 10 hours depending on your skill.
-They focus on 2 or more Angular skills
 
 ## Skill goals :
 
