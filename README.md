@@ -2,7 +2,7 @@
 
 Project id: mini-prj-20231004-todo-cdl
 Chapter id: 02
-Chapter name: Adding a task to list
+Chapter name: Setting up classes
 About:
    In this branch we 
 ## About Micro Projects
